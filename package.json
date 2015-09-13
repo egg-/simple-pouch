@@ -1,0 +1,27 @@
+{
+  "name": "simple-pouch",
+  "version": "0.1.0",
+  "author": {
+    "name": "egg",
+    "email": "i@egg.pe.kr"
+  },
+  "description": "A simple, lightweight queue using Redis rpush and lrange, ltrim.",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/egg-/simple-pouch.git"
+  },
+  "keywords": [
+    "redis",
+    "queue",
+    "rpush",
+    "lrange",
+    "ltrim"
+  ],
+  "license": "MIT",
+  "main": "lib/pouch",
+  "devDependencies": {},
+  "dependencies": {
+    "redis": "^1.0.0"
+  }
+}
