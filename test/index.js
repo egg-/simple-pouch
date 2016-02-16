@@ -16,6 +16,10 @@ pouch.count(function (err, count) {
 })
 
 setTimeout(function () {
+  pouch.list(function (err, items) {
+    console.log('list', items)
+  }, 0, 100)
+
   pouch.pick(function (err, items) {
     console.log(items)
 

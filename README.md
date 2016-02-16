@@ -28,6 +28,10 @@ pouch.count(function (err, count) {
 })
 
 setTimeout(function () {
+  pouch.list(function (err, items) {
+    console.log('list', items)
+  }, 0, 100)
+
   pouch.pick(function (err, items) {
     console.log(items)
 
@@ -36,8 +40,12 @@ setTimeout(function () {
     })
   }, 8)
 }, 500)
+
 ```
 
+## Release History
+
+See the [changelog](CHANGELOG.md)
 
 ## LICENSE
 
